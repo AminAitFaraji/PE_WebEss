@@ -1,0 +1,121 @@
+/*naam: Amin Ait Faraji */
+
+/*
+    blauw   0090e3
+    oranje  orange
+    geel    f0d10a
+    wit     white
+*/
+body{
+    margin: auto;
+
+}
+main{
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+h1{
+    color: white;
+    font-size: 28pt;
+    float: left;
+    margin-left: 50px;
+
+}
+nav {
+    background-color: orange;
+    width: 100%;
+    font-family: monospace;
+
+}
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+}
+nav li {
+    width: 10%;
+    padding: 15px;
+    text-align: center;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+li span{
+    visibility: hidden;
+}
+.winkel{
+    width: 20px;
+    background-color: #0090e3;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+h1 span{
+    background-color: #0090e3;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+img{
+    width: 100%;
+}
+article{
+    margin: 1%;
+    width: 20%;
+    padding: 15px;
+
+}
+.border img{
+    border: 1px solid orange;
+    border-radius: 5px;
+    border-style: dotted;
+}
+figure{
+    border: hidden;
+}
+.heart{
+    background-color: white;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .blackfriday{
+        visibility: hidden;
+    }
+    nav{
+        height: auto;
+    }
+    nav li{
+        width: 100%;
+    }
+    nav li:hover{
+        background-color: #f0d10a;
+    }
+    li span{
+        visibility: visible;
+    }
+    .winkel{
+        visibility: hidden;
+    }
+    article{
+        width: 30%;
+    }
+    .border, .recent{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 600px) {
+    article{
+        width: 100%;
+    }
+}
+
+
